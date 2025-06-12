@@ -327,6 +327,25 @@ class Calculator: ObservableObject {
         }
     }
     
+    func backspacePressed() {
+        if display == "Error" {
+            display = "0"
+            userIsTyping = false
+            return
+        }
+        
+        if userIsTyping && display.count > 1 {
+            display = String(display.dropLast())
+            if display.isEmpty || display == "-" {
+                display = "0"
+                userIsTyping = false
+            }
+        } else {
+            display = "0"
+            userIsTyping = false
+        }
+    }
+    
     private func calculate() {
         guard let operation = operation else { return }
         currentNumber = Double(display) ?? 0

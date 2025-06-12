@@ -95,6 +95,11 @@ struct ContentView: View {
         default:
             break
         }
+        
+        // Handle special keys using keyCode
+        if event.keyCode == 51 || event.keyCode == 117 { // Delete key or Forward Delete
+            calculator.backspacePressed()
+        }
     }
 }
 

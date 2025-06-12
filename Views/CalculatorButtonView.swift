@@ -91,6 +91,8 @@ struct CalculatorButtonView: View {
             calculator.openParenthesesPressed()
         case .closeParen:
             calculator.closeParenthesesPressed()
+        case .backspace:
+            calculator.backspacePressed()
         case .percent:
             break
         }

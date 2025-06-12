@@ -25,9 +25,10 @@ A full-featured scientific calculator built with SwiftUI for macOS.
 
 ### User Interface
 - Native macOS design with SwiftUI
-- Responsive button layout
+- Responsive button layout with backspace support
 - Visual feedback and animations
 - History panel with clear functionality
+- Input correction with backspace button
 
 ## System Requirements
 
@@ -92,6 +93,7 @@ cd Calculator
 | ^ | Power |
 | = or Enter | Equals |
 | C | Clear |
+| Delete/Backspace | Backspace |
 | ( , ) | Parentheses |
 | . | Decimal point |
 | s | Sine |

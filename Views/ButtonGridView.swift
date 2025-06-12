@@ -8,11 +8,11 @@ struct ButtonGridView: View {
         [.log, .ln, .square, .squareRoot],
         [.pi, .e, .power, .divide],
         [.memoryClear, .memoryRecall, .memoryAdd, .memorySubtract],
-        [.openParen, .closeParen, .clear, .multiply],
-        [.seven, .eight, .nine, .subtract],
-        [.four, .five, .six, .add],
-        [.one, .two, .three, .equals],
-        [.zero, .decimal, .plusMinus, .percent]
+        [.openParen, .closeParen, .clear, .backspace],
+        [.seven, .eight, .nine, .multiply],
+        [.four, .five, .six, .subtract],
+        [.one, .two, .three, .add],
+        [.zero, .decimal, .plusMinus, .equals]
     ]
     
     var body: some View {
@@ -69,12 +69,13 @@ enum CalculatorButton: String, CaseIterable {
     case angleToggle = "DEG"
     case openParen = "("
     case closeParen = ")"
+    case backspace = "⌫"
     
     var backgroundColor: Color {
         switch self {
         case .add, .subtract, .multiply, .divide, .equals, .power:
             return Color.orange
-        case .clear, .plusMinus, .percent, .angleToggle, .openParen, .closeParen:
+        case .clear, .plusMinus, .percent, .angleToggle, .openParen, .closeParen, .backspace:
             return Color.gray
         case .memoryClear, .memoryRecall, .memoryAdd, .memorySubtract:
             return Color.blue
