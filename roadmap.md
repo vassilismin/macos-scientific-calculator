@@ -40,12 +40,16 @@
 - [x] Update button layout to accommodate backspace
 - [x] Add keyboard shortcut for backspace (Delete/Backspace key)
 - [x] Update documentation and rebuild distribution
+- [ ] Debug backspace button display issue
+- [ ] Investigate UI rendering problems
+- [ ] Fix button layout visibility concerns
 
 ## Project Summary
-- **Status:** 🔄 ACTIVE DEVELOPMENT (Post v1.0)
+- **Status:** 🔧 DEBUGGING (v1.1 Issues)
 - **Project started:** December 2024
 - **Version 1.0 completed:** December 2024
-- **Current phase:** Phase 6 (Enhancements)
+- **Version 1.1 status:** Implementation complete, UI issues detected
+- **Current phase:** Phase 6 (Enhancements & Bug Fixes)
 - **Total duration:** 6 phases (ongoing)
 - **Primary platform:** macOS
 - **Technology:** SwiftUI (native)
@@ -75,6 +79,11 @@
 
 ## Version History
 - **v1.0** - Initial release with full scientific calculator functionality
-- **v1.1** - Added backspace button and keyboard shortcut for input correction
+- **v1.1** - (In Progress) Adding backspace functionality - implementation complete, UI display issues under investigation
 
-**Project status: Active development continues with user experience enhancements.**
+## Known Issues
+- **v1.1 Display Issue:** Backspace button not appearing in UI despite correct implementation
+- **Status:** Code implementation verified, investigating SwiftUI rendering/caching issues
+- **Workaround:** Keyboard shortcuts (Delete/Backspace) may still work even if button not visible
+
+**Project status: Active debugging of v1.1 UI rendering issues.**
