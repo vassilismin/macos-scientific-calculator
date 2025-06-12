@@ -1,0 +1,25 @@
+# Build artifacts
+.build/
+build/
+*.xcodeproj
+*.xcworkspace
+
+# macOS
+.DS_Store
+*/.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+project.xcworkspace/
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
